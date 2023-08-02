@@ -1,0 +1,11 @@
+  task 1 details
+Task 1: Create a class that represents a bank account. (OOP ONLY)
+Step 1: Create a new file and save it as bank_account.js
+Step 2: Define the BankAccount class.
+Step 3: Define the transaction object.
+Step 4: Create a new bank account and add a transaction.
+Step 5: Calculate the interest earned on the bank account
+
+
+the resources
+https://forum.freecodecamp.org
