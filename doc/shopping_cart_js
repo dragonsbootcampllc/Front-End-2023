@@ -1,0 +1,22 @@
+class ShoppingCart {
+    constructor(items) {
+      this.items = items;
+    } 
+    addItem(item) {
+      this.items.push(item);
+    }
+    getTotalPrice() {
+      let total = 0;
+      for (let i = 0; i < this.items.length; i++) {
+        total += this.items[i].price;
+      }
+      return total;
+    }
+  }
+  
+  const cart = new ShoppingCart([
+    { name: "item1", price: 10 },
+    { name: "item2", price: 20 },
+    { name: "item3", price: 30 }
+  ]);
+  console.log(cart.getTotalPrice());
