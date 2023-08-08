@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge #4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-600">
+    <section class="grid">
+        <div class="comboned flex justify-center items-center my-8">
+            <div class="contanier bg-blue-500 mx-8 p-8 rounded-lg w-1/5">
+                <div class="box-icon">
+                    <div class="sun bg-white p-10 rounded-full">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <div class="boint">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <h1 class="text-xl font-semibold">morning scene</h1>
+                <p class="text-gray-600">7 devices</p>
+            </div>
+            <div class="contanier-2 bg-white mx-8 p-8 rounded-lg w-1/5">
+                <div class="box-icon">
+                    <div class="mon bg-green-500 p-10 rounded-full">
+                        <i class="fa-regular fa-moon"></i>
+                    </div>
+                    <div class="boint">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <h1 class="text-xl font-semibold">night scene</h1>
+                <p class="text-gray-600">2 devices</p>
+            </div>
+        </div>
+        <div class="under flex justify-between items-center bg-white rounded-lg my-8 mx-8 p-8">
+            <div class="blus w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                <i class="fa-solid fa-circle-plus"></i>
+            </div>
+            <div>
+                <h1 class="text-xl font-semibold">you created 8 scenes</h1>
+                <p class="text-gray-600">24 devices in use</p>
+            </div>
+            <button class="bg-black text-white rounded-lg px-10 py-4">see all</button>
+        </div>
+    </section>
+    <footer class="bg-black text-white text-center py-4">
+        <p>&copy; Design and Developed by rahma mohamed 2023</p>
+    </footer>
+</body>
+</html>
