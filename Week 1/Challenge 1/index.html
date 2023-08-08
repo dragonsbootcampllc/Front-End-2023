@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <style>
+        .arrow::after {
+    content: "";
+    position: absolute;
+    width: 0.1rem;
+    height: 1.6rem;
+    background-color: black;
+    transform: rotate(45deg);
+    left: 6px;
+    top: -4px;
+}
+.parent-content {
+    animation-name: ex ;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes ex {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+    </style>
+</head>
+<body class="bg-slate-400 flex justify-center items-center h-screen">
+    <div class="parent-content bg-[#d6d3d1] text-center box-border p-5 w-96 rounded-3xl ">
+
+        <div class="flex justify-between items-center mb-28">
+            <div class="bg-black flex justify-between items-center rounded-3xl p-2 gap-2">
+                <div class="icons bg-white border p-1 rounded-full flex justify-center items-baseline ">
+                    <div class="line1 w-0.5 h-2 bg-black m-px"></div>
+                    <div class="line2 w-0.5 h-4 bg-black m-px"></div>
+                    <div class="line2 w-0.5 h-4 bg-black m-px"></div>
+                    <div class="line3 w-0.5 h-3 bg-black m-px"></div>
+                </div>
+                <p class="text-[#fff]">
+                    20 +metrics
+                </p>
+            </div>
+            <div class="w-5 h-5 border-s-transparent border-b-transparent border-t-black border-e-black border-2 relative arrow cursor-pointer">
+            </div>
+        </div>
+                
+        <p class="font-bold uppercase text-xl text-left ">
+            collect and protect <br> data up to 10x faster
+        </p>
+
+    </div>
+    <script>
+        let btn = document.querySelector(".arrow");
+let rm = document.querySelector(".parent-content");
+    btn.addEventListener("click",function(){
+        rm.remove();
+        let p = document.createElement("p");
+        p.innerText= "You Are Out!!!!!!!!";
+        p.classList.add("font-black");
+        p.classList.add("text-xl");
+        p.classList.add("bg-white");
+        document.body.appendChild(p);
+    })
+
+
+    </script>
+</body>
+</html>
