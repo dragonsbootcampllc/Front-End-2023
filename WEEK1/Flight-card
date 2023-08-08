@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47122eae27.js" crossorigin="anonymous"></script>
+    <title>Flight</title>
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: linear-gradient(#e4e4f2,#cccae4,#bec2e3,#acbbe3);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container bg-purple-400 mx-auto max-w-7xl p-5 mt-10 justify-center px-4">
+
+
+    <div class="flex mx-auto  relative drop-shadow-2xl rounded-3xl py-4 px-0 m-5 justify-center">
+        <div class="flex bg-white max-w-3xl  p-3 relative rounded-xl border-r-4 border-dashed">
+
+            <img src="img/newYork.jpeg" class="rounded-lg  mr-3 w-64 h-32">
+            <div>
+
+            <div class="flex space-x-60 w-128">
+                <h1 class="truncate text-lg font-bold">New York,US</h1>
+                <p class="text-gray-500">2-8 April</p>
+            </div>
+
+         
+                <div class="flex space-x-5 w-128 mt-5">
+                    <div>
+                        <span class="font-bold mb-3">02:30</span>
+                    <span class="block text-white text-xs bg-black rounded-lg px-2 py-1 mt-2">STE</span>
+                </div>
+
+                    <div class="relative border-b border-dashed border-b-10 w-64 h-3 border-black ">
+                        <i class="fa-solid fa-plane absolute top-1 right-12"></i>
+                        <span class="absolute top-7  right-12 text-gray-500">Direct</span>
+                    </div>
+                  
+                    <div>
+                        <span class="font-bold mb-3">05:00</span>
+                    <span class="block text-white text-xs bg-black rounded-lg px-2 py-1 mt-2">JFK</span>
+                </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-b border-dashed border-r-5 my-5 pt-5">
+                <div class="absolute rounded-full w-5 h-5 bg-purple-400 -mt-2 -top-0 -right-3"></div>
+                <div class="absolute rounded-full w-5 h-5 bg-purple-400 -bottom-2 -right-3"></div>
+            </div>
+
+        </div>
+
+     
+
+        <div class="flex-1 p-3 bg-white max-w-xs rounded-xl">
+            <div class="flex space-x-28 px-1">
+                <span class="font-bold text-xl">$600</span>
+                <div class="float-right">
+                <i class="fa-solid fa-utensils box-border border-4 bg-white p-2 rounded-lg"></i>
+                <i class="fa-solid fa-suitcase box-border border-4 bg-white p-2 rounded-lg"></i>
+            </div>
+            </div>
+            <div class="mt-10 w-64 mx-auto items-center justify-center">
+                <button class="text-center font-bold w-full text-white bg-purple-500 rounded-xl py-2 px-4">View Deal</button>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+
+
+
+
+
+    <div class="flex mx-auto  relative drop-shadow-2xl rounded-3xl py-4 px-0 m-5 justify-center">
+        <div class="flex bg-white max-w-3xl  p-3 relative rounded-xl border-r-4 border-dashed">
+
+            <img src="img/london.jpeg" class="rounded-lg  mr-3 w-64 h-32">
+            <div>
+
+            <div class="flex space-x-60 w-128">
+                <h1 class="truncate text-lg font-bold">London ,UK</h1>
+                <p class="text-gray-500">2-8 April</p>
+            </div>
+
+         
+                <div class="flex space-x-5 w-128 mt-5">
+                    <div>
+                        <span class="font-bold mb-3">04:00</span>
+                    <span class="block text-white text-xs bg-black rounded-lg px-2 py-1 mt-2">STE</span>
+                </div>
+
+                    <div class="relative border-b border-dashed border-b-10 w-64 h-3 border-black ">
+                        <i class="fa-solid fa-plane absolute top-1 right-12"></i>
+                        <span class="absolute top-7  right-12 text-gray-500">1Stop</span>
+                    </div>
+
+                    <div>
+                        <span class="font-bold mb-3">06:00</span>
+                    <span class="block text-white text-xs bg-black rounded-lg px-2 py-1 mt-2">JFK</span>
+                </div>
+
+                </div>
+
+            </div>
+
+            <div class="border-b border-dashed border-r-5 my-5 pt-5">
+                <div class="absolute rounded-full w-5 h-5 bg-purple-400 -mt-2 -top-0 -right-3"></div>
+                <div class="absolute rounded-full w-5 h-5 bg-purple-400 -mt-2 -bottom-2 -right-3"></div>
+            </div>
+
+        </div>
+
+        <div class="flex-1 p-3 bg-white max-w-xs rounded-xl">
+            <div class="flex space-x-28 px-1">
+                <span class="font-bold text-xl">$189</span>
+                <div class="float-right">
+                <i class="fa-solid fa-utensils box-border border-4 bg-white p-2 rounded-lg"></i>
+                <i class="fa-solid fa-suitcase box-border border-4 bg-white p-2 rounded-lg"></i>
+            </div>
+            </div>
+            <div class="mt-10 w-64 mx-auto items-center justify-center">
+                <button class="text-center font-bold w-full text-white bg-purple-500 rounded-xl py-2 px-4">View Deal</button>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+
+
+
+
+    <div class="flex mx-auto  relative drop-shadow-2xl rounded-3xl py-4 px-0 m-5 justify-center">
+        <div class="flex bg-white max-w-3xl  p-3 relative rounded-xl border-r-4 border-dashed">
+
+            <img src="img/newYork.jpeg" class="rounded-lg  mr-3 w-64 h-32">
+            <div>
+
+            <div class="flex space-x-60 w-128">
+                <h1 class="truncate text-lg font-bold">New York,US</h1>
+                <p class="text-gray-500">2-8 April</p>
+            </div>
+
+         
+                <div class="flex space-x-5 w-128 mt-5">
+                    <div>
+                        <span class="font-bold mb-3">10:30</span>
+                    <span class="block text-white text-xs bg-black rounded-lg px-2 py-1 mt-2">STE</span>
+                </div>
+
+                    <div class="relative border-b border-dashed border-b-10 w-64 h-3 border-black ">
+                        <i class="fa-solid fa-plane absolute top-1 right-12"></i>
+                        <span class="absolute top-7  right-12 text-gray-500">Direct</span>
+                    </div>
+
+                    <div>
+                        <span class="font-bold mb-3">05:00</span>
+                    <span class="block text-white text-xs bg-black rounded-lg px-2 py-1 mt-2">JFK</span>
+                </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="border-b border-dashed border-r-5 my-5 pt-5">
+                <div class="absolute rounded-full w-5 h-5 bg-purple-400 -mt-2 -top-0 -right-3"></div>
+                <div class="absolute rounded-full w-5 h-5 bg-purple-400 -mt-2 -bottom-2 -right-3"></div>
+            </div>
+
+        </div>
+
+        <div class="flex-1 p-3 bg-white max-w-xs rounded-xl">
+            <div class="flex space-x-28 px-1">
+                <span class="font-bold text-xl">$285</span>
+                <div class="float-right">
+                <i class="fa-solid fa-utensils box-border border-4 bg-white p-2 rounded-lg"></i>
+                <i class="fa-solid fa-suitcase box-border border-4 bg-white p-2 rounded-lg"></i>
+            </div>
+            </div>
+            <div class="mt-10 w-64 mx-auto items-center justify-center">
+                <button class="text-center font-bold  w-full text-white bg-purple-500 rounded-xl py-2 px-4">View Deal</button>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+
+</div>
+</body>
+</html>
