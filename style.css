@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #666;
+    display: grid;
+}
+section{
+    background-color: #eee;
+    place-content: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 40px;
+    align-items: center;
+    margin: 2rem 0;
+}
+section .comboned{
+   display: flex;
+   justify-content: space-around;
+   
+}
+section .comboned .contanier{
+    background-color: rgba(30, 143, 255, 0.585);
+    margin: 2rem ;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 20%;
+}
+section .comboned .contanier .box-icon{
+    margin-bottom: 20px;
+    
+}
+section .comboned .contanier .box-icon .sun{
+    background-color: #fff ;
+    padding: 10px;
+    border-radius: 50%;
+    float: left;
+}
+section .comboned .contanier .box-icon .boint{
+    float:right ;
+}
+section .comboned .contanier p{
+    color: #666;
+}
+section .comboned .contanier-2{
+    background-color: #fff;
+    margin: 2rem ;
+    padding: 2rem;
+    border-radius: 20px;
+    width: 20%;
+}
+section .comboned .contanier .box-icon{
+    margin-bottom: 20px;
+    
+}
+section .comboned .contanier-2 .box-icon .mon{
+    background-color: chartreuse;
+    padding: 10px;
+    border-radius: 50%;
+    float: left;
+}
+section .comboned .contanier-2 .box-icon .boint{
+    float:right ;
+}
+section .comboned .contanier-2 p{
+    color: #666;
+}
+.under{
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 2rem;
+    display: flex;
+    padding: 2rem;
+   justify-content: space-evenly;
+    
+}
+.under .blus{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #eee;
+}
+.under button{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+.footer p{
+    color: #fff;
+    padding: 0.7rem 0;
+    font-size: 0.9rem;
+}
