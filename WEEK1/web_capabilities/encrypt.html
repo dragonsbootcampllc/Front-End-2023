@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+   
+    <title>EnCrYpToo</title>
+    <style>
+         body{
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-image: linear-gradient(#e4e4f2,#cccae4,#bec2e3,#acbbe3);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mx-auto max-w-md p-5 mt-10 text-center">
+        <h1 class="font-bold text-xl ">Try To Encrypt & Decrypt Ur text</h1>
+        <div class="box p-5 mt-2">
+            <input type="text" id="plaintext" class="rounded-lg p-1 h-12 w-64" >
+            <button  id="encryptbtn" class="bg-purple-400 rounded-xl p-2">Encrypt</button>
+        </div>
+
+        <div class="box p-5 mt-2">
+            <input disabled type="text" id="ciphertext" class="rounded-lg p-1 h-12 w-64" >
+            <button  id="decryptbtn" class="bg-purple-400 rounded-xl p-2">Decrypt</button>
+        </div>
+    </div>
+    <script src="encrypt.js"></script>
+</body>
+</html>
