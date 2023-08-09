@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tailWindCss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font Awsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body >
+    <div class="w-full h-screen flex justify-center items-center bg-teal-700 ">
+        <div class="wrapper w-2/5 h-auto bg-slate-50 p-7 rounded overflow-hidden relative ">
+            <div class="rounded-full border-2 border-slate-100 border-solid w-40 h-40 absolute bottom-90 left-48 "></div>
+            <div class="rounded-full border-2 border-slate-100 border-solid w-56 h-56 absolute bottom-80 left-40 z-1 "></div>
+            <div class="rounded-full border-2 border-slate-100 border-solid w-2/4 h-2/4 absolute bottom-72 left-32 z-1 "></div>
+            <div class="bg-slate-100 inline-block p-1 absolute right-4  cursor-pointer">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="wrapper-img flex justify-center items-center relative py-10 border-2 border-slate-100 border-solid rounded-full w-20 h-20 ml-52 my-10">
+                <img src="helping.jpg" alt="help" class="w-10 h-10 rounded-full  border-2 border-slate-300 border-solid absolute left-1">
+                <img src="space-design.jpg" alt="space" class="w-10 h-10 rounded-full absolute right-1 border-2 border-slate-300 border-solid">
+            </div>
+            <h2 class="text-center mb-5 font-bold z-10 relative">Accounting tool integration</h2>
+            <p class="text-center text-slate-400 mb-5 z-10 relative">Log in with the credentials of your accountina tool to <br>
+                get a more accurate view of your company's finances.</p>
+                <form class="form mx-16">
+                    <label class="text-slate-400" >Email</label>
+                    <br>
+                    <input type="text" class="mb-5 w-full rounded outline-none border-2 border-slate-500 border-solid p-1">
+                    <br>
+                    <label class="text-slate-400">Password</label>
+                    <br>
+                    <input type="password" class="mb-5 w-full rounded outline-none border-2 border-slate-500 border-solid p-1">
+                    <br>
+                    <button class="bg-teal-700 text-white p-3 rounded-full w-full">Continue</button>
+                </form>
+        </div>
+    </div>
+    
+</body>
+</html>
