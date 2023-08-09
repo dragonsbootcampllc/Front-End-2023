@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Task 3 - Web Crypto API</title>
+    </head>
+    <body>
+        <div
+            class="min-h-screen bg-gray-200 flex justify-center items-center flex-col p-8"
+        >
+            <div class="w-full mb-10">
+                <label for="algorithm-select" class="mr-2 font-bold text-lg"
+                    >Algorithm:</label
+                >
+                <select name="algorithm" id="algorithm-select" class="w-40">
+                    <option value="RSA-OAEP">RSA-OAEP</option>
+                    <option value="AES-CTR" disabled>AES-CTR</option>
+                    <option value="AES-CBC" disabled>AES-CBC</option>
+                    <option value="AES-GCM" disabled>AES-GCM</option>
+                </select>
+            </div>
+
+            <div class="w-full mb-5">
+                <label
+                    for="user-text"
+                    class="font-bold text-xl mb-2 capitalize block"
+                    >Your text:</label
+                >
+                <div>
+                    <textarea
+                        class="w-full resize-none focus:outline-none rounded-lg border-4 border-transparent focus:border-blue-200 p-2 shadow-xl"
+                        name="user-text"
+                        id="user-text"
+                        cols="30"
+                        rows="6"
+                        class="w-full"
+                        placeholder="Enter your text here..."
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="w-full flex justify-between sm:flex-row flex-col gap-5">
+                <div class="sm:w-[48%] w-full">
+                    <label
+                        for="encrypted"
+                        class="font-bold text-xl mb-2 capitalize block"
+                        >encrypted text:</label
+                    >
+                    <div class="relative">
+                        <button
+                            class="absolute right-2 top-2 p-2 rounded-full bg-blue-400 text-xs font-bold uppercase text-white z-50"
+                            id="encrypted-copy-btn"
+                        >
+                            Copy
+                        </button>
+                        <textarea
+                            class="w-full resize-none focus:outline-none rounded-lg border-4 border-transparent p-2 cursor-not-allowed shadow-xl"
+                            name="encrypted"
+                            id="encrypted"
+                            cols="30"
+                            rows="10"
+                            class="w-full"
+                            placeholder="Encrypted text will be here"
+                            readonly
+                        ></textarea>
+                    </div>
+                </div>
+
+                <div class="sm:w-[48%] w-full">
+                    <label
+                        for="decrypted"
+                        class="font-bold text-xl mb-2 capitalize block"
+                        >decrypted text:</label
+                    >
+                    <div class="relative">
+                        <button
+                            class="absolute right-2 top-2 p-2 rounded-full bg-blue-400 text-xs font-bold uppercase text-white z-50"
+                            id="decrypted-copy-btn"
+                        >
+                            Copy
+                        </button>
+                        <textarea
+                            class="w-full resize-none focus:outline-none rounded-lg border-4 border-transparent p-2 cursor-not-allowed shadow-xl"
+                            name="decrypted"
+                            id="decrypted"
+                            cols="30"
+                            rows="10"
+                            class="w-full"
+                            placeholder="Decrypted (Normal) text will be here"
+                            readonly
+                        ></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mt-4 flex gap-6 sm:flex-row flex-col w-full justify-center"
+            >
+                <button
+                    class="px-1 py-3 bg-blue-400 text-white font-bold text-2xl rounded-xl sm:w-40 w-full hover:opacity-70 transition-opacity duration-300 capitalize"
+                    id="btn-convert"
+                >
+                    Convert
+                </button>
+                <button
+                    class="px-1 py-3 bg-blue-400 text-white font-bold text-2xl rounded-xl sm:w-40 w-full hover:opacity-70 transition-opacity duration-300"
+                    id="btn-clear"
+                >
+                    Clear All
+                </button>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
