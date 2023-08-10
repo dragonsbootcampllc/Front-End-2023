@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Worker Task</title>
+
+  <!-- Js Files -->
+  <script src="index.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {theme: {extend: {colors: {bodyBG: '#412234'}, fontSize: {}}}}
+  </script>
+</head>
+<body class="h-screen flex bg-bodyBG justify-center items-center px-10">
+  <form class="container bg-white flex flex-col p-10 rounded-lg shadow max-w-lg">
+    <p class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 mb-10">Result: <span id="result">0</span></p>
+    <input type="number" id="num" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2 mb-8" placeholder="Enter num...">
+  </form>
+</body>
+</html>
