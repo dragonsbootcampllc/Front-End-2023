@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <style>
+    .crescent{
+    border: 1px solid #000;
+    border-top-left-radius:50% ;
+    border-bottom-left-radius:50% ;
+    position: relative;
+    box-shadow: 5px 5px 0 0px #000;
+    transform: rotate(-90deg);
+}
+@media screen and (max-width:480px) {
+    .container__in{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+}
+}
+@media screen and (max-width:400px) {
+.container__bottom{
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+}
+
+
+    </style>
+</head>
+<body class="bg-slate-600 h-screen flex justify-center items-center capitalize">
+
+    <div class="p-6 bg-[#ccc] rounded-3xl w-[30rem]">
+        <div class="container__in flex justify-between items-center gap-6 ">
+            <div class="w-64 rounded-3xl bg-[#96B8FF] p-3">
+                <div class="flex justify-between ">
+                    <div class="sun relative bg-white rounded-full p-3">
+                        <div class="circle border relative border-black rounded-full w-4 h-4 flex justify-between items-center gap-6">
+                            <div class="absolute w-[1px] h-[5px] bg-black rotate-90 left-[123%]"></div>
+                            <div class="absolute w-[1px] h-[5px] bg-black rotate-180 bottom-[100%] left-2/4"></div>
+                            <div class="absolute w-[1px] h-[5px] bg-black rotate-90 right-[123%]"></div>
+                            <div class="absolute w-[1px] h-[5px] bg-black rotate-180 left-2/4 top-[100%]"></div>
+                        </div>
+
+                    </div>
+                    <div class="balls flex justify-center self-start gap-1">
+                        <div class="bg-black w-2 h-2 rounded-full"></div>
+                        <div class="bg-black w-2 h-2 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <p class="font-black text-[1.15rem]">
+                        morning scene
+                    </p>
+                    <p class="text-[#ccc] font-black">
+                        7 devices
+                    </p>
+                </div>
+                
+            </div>
+            <div class="w-64  rounded-3xl bg-white p-3">
+                <div class="flex justify-between">
+                    <div class="moon relative bg-[#E0FF00] rounded-full p-3">
+                        <div class="crescent   w-4 h-4 ">
+                            
+                        </div>
+                    </div>
+                    <div class="balls flex justify-center self-start gap-1">
+                        <div class="bg-black w-2 h-2 rounded-full"></div>
+                        <div class="bg-black w-2 h-2 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <p class="font-black text-[1.15rem]">
+                        night scene
+                    </p>
+                    <p class="text-[#ccc] font-black">
+                        2 devices
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__bottom rounded-3xl bg-white flex justify-between items-center mt-20 p-2">
+            <div class="flex justify-center gap-2 items-center ">
+                <div class="w-14 h-14 bg-[#ccc] rounded-full flex justify-center items-center">
+                    <div class="w-7 h-7 border border-black flex justify-center items-center rounded-full relative">
+                        <div class="w-1 h-3  bg-black rotate-90 origin-center absolute"></div>
+                        <div class="w-1 h-3  bg-black "></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-black ">you created 8 scenes</p>
+                    <p class="font-black text-[#ccc]">24 devices in use</p>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="capitalize py-2 px-6 bg-black text-[#fff] rounded-3xl">see all</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+
+</body>
+</html>
