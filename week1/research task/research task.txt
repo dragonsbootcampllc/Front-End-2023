@@ -1,0 +1,38 @@
+i use MDN refearance
+The AmbientLightSensor interface of the Sensor APIs returns the current light level or illuminance of the ambient light around the hosting device.
+
+To use this sensor, the user must grant permission to the 'ambient-light-sensor' device sensor through the Permissions API.
+
+This feature may be blocked by a Permissions Policy set on your server.
+
+EventTarget
+Sensor
+AmbientLightSensor
+Constructor
+AmbientLightSensor() Experimental
+Creates a new AmbientLightSensor object.
+
+Instance properties
+AmbientLightSensor.illuminance Experimental
+Returns the current light level in lux of the ambient light level around the hosting device.
+
+Instance methods
+AmbientLightSensor doesn't have own methods. However, it inherits methods from its parent interfaces, Sensor and EventTarget.
+
+Events
+AmbientLightSensor doesn't have own events. However, it inherits events from its parent interface, Sensor.
+
+Example
+JS
+Copy to Clipboard
+
+if ("AmbientLightSensor" in window) {
+  const sensor = new AmbientLightSensor();
+  sensor.addEventListener("reading", (event) => {
+    console.log("Current light level:", sensor.illuminance);
+  });
+  sensor.addEventListener("error", (event) => {
+    console.log(event.error.name, event.error.message);
+  });
+  sensor.start();
+}
