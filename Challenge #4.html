@@ -1,0 +1,194 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend:
+        {
+          colors: {
+            bodyBG: '#c8cdd0',
+            tab: '#f3f5f6'
+          },
+          fontSize: {}
+        }
+      }
+    }
+  </script>
+  <title>Challenge #4</title>
+
+  <style>
+    /* font */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap');
+
+    * {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* left bottom section */
+    /* ==================== */
+  </style>
+</head>
+
+<body class="flex justify-center bg-bodyBG items-center min-h-screen">
+  <!-- Right bottom section -->
+  <div class="section-2 rounded-[37px] bg-white h-fit py-5 grid grid-cols-1 gap-2 box-border pb-9 shadow scale-90">
+    <!-- head of section -->
+    <div class="head col-span-full flex no-wrap justify-between gap-[90px] items-center p-2 mb-5">
+      <div class="flex no-wrap gap-3 items-center">
+        <div class="w-10 h-10 flex items-center justify-center relative">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+          </svg>
+        </div>
+        <div class="mr-[40px] mt-[-13px]">
+          <p class="font-semibold text-sm">AI Power Analytics</p>
+          <span class="text-xs text-slate-500 absolute">Daily usage</span>
+        </div>
+      </div>
+      <button
+        class="transition-all btn bg-black text-white text-xs px-3 h-7 w-7 rounded-full mr-2 relative hover:bg-gray-900 transform hover:scale-110">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 absolute"
+          style="top:50%;left:50%;transform:translate(-50%,-50%)">
+          <path fill-rule="evenodd"
+            d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- devices -->
+    <div class="container box-border gap-2 flex flex-col px-5">
+      <div class="tab box-border flex gap-[90px] bg-tab px-4 py-3 rounded-[35px] justify-between items-center hover:scale-105 transition-all hover:shadow">
+        <div class="flex no-wrap gap-5 items-center">
+          <div class="icon w-10 h-10 relative bg-white rounded-full">
+            <svg width="62" height="57" style="transform: scale(.38) translate(-50%, -50%);top:10%;left:2%;"
+              class="absolute">
+              <!-- body -->
+              <path d="M 2 2 L 60 2" stroke="black" stroke-width="2" />
+              <path d="M 2 20 L 60 20" stroke="black" stroke-width="2" />
+              <path d="M 2 2 L 2 20" stroke="black" stroke-width="2" />
+              <path d="M 60 2 L 60 20" stroke="black" stroke-width="2" />
+              <path d="M 50 14 L 54 14" stroke="black" stroke-width="2" />
+              <!-- the down shap -->
+              <path d="M 5 28 L 55 28" stroke="black" stroke-width="2" />
+              <path d="M 5 20 L 5 28" stroke="black" stroke-width="2" />
+              <path d="M 55 20 L 55 28" stroke="black" stroke-width="2" />
+              <!-- the air -->
+              <path d="M 15 40 L 15 55" stroke="black" stroke-width="2" />
+              <path d="M 32 40 L 32 55" stroke="black" stroke-width="2" />
+              <path d="M 49 40 L 49 55" stroke="black" stroke-width="2" />
+            </svg>
+          </div>
+          <div class="mr-8">
+            <p class="font-semibold text-sm" style="font-family: Arial, Helvetica, sans-serif;">Air Conditioner</p>
+            <span class="text-xs text-slate-500 font-medium" style="font-family: Arial, Helvetica, sans-serif;">2 unit |
+              18kWh</span>
+          </div>
+        </div>
+        <button class="hover:translate-x-1 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="tab box-border flex gap-[90px] bg-tab px-4 py-3 rounded-[35px] justify-between items-center hover:scale-105 transition-all hover:shadow">
+        <div class="flex no-wrap gap-5 items-center">
+          <div class="icon w-10 h-10 relative bg-white rounded-full">
+            <svg viewBox="-18 -28 120 150">
+              <rect x="10" y="30" width="65" height="17" rx="8" stroke="black" fill="transparent" stroke-width="4" />
+              <path d="M 30 42 L 30 47 
+                       M 20 30 L 14 8 
+                       M 32 30 L 30 8
+                       M 50 30 L 52 8
+                       M 62 30 L 68 8
+                " stroke="black" stroke-width="4" />
+            </svg>
+
+          </div>
+          <div class="mr-8">
+            <p class="font-semibold text-sm" style="font-family: Arial, Helvetica, sans-serif;">Wi-Fi Router</p>
+            <span class="text-xs text-slate-500 font-medium" style="font-family: Arial, Helvetica, sans-serif;">1 unit |
+              8kWh</span>
+          </div>
+        </div>
+        <button class="hover:translate-x-1 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="tab box-border flex gap-[90px] bg-tab px-4 py-3 rounded-[35px] justify-between items-center hover:scale-105 transition-all hover:shadow">
+        <div class="flex no-wrap gap-5 items-center">
+          <div class="icon w-10 h-10 relative bg-white rounded-full">
+            <svg viewBox="-18 -4 120 150">
+              <rect x="10" y="30" width="65" height="40" rx="2" stroke="black" fill="transparent" stroke-width="4" />
+              <path d="M 31.6 70 L 31.6 83 
+                       M 52.2 70 L 52.2 83 
+                       M 24 83 L 60 83    
+                " stroke="black" stroke-width="4" />
+            </svg>
+
+          </div>
+          <div class="mr-8">
+            <p class="font-semibold text-sm" style="font-family: Arial, Helvetica, sans-serif;">Smart TV</p>
+            <span class="text-xs text-slate-500 font-medium" style="font-family: Arial, Helvetica, sans-serif;">2 unit |
+              12kWh</span>
+          </div>
+        </div>
+        <button class="hover:translate-x-1 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+      <div class="tab box-border flex gap-[90px] bg-tab px-4 py-3 rounded-[35px] justify-between items-center hover:scale-105 transition-all hover:shadow">
+        <div class="flex no-wrap gap-5 items-center">
+          <div class="icon w-10 h-10 relative bg-white rounded-full">
+            <svg viewBox="-15 -24 120 100">
+              <!-- first drop -->
+              <path d="M 47 27
+                       Q 22,57 47,62
+                       Q 72,57 47,27
+                Z" fill="transparent" stroke="black" stroke-width="4" />
+              <!-- sconed drop -->
+              <path d="M 27 17
+                       Q 12,32 27,37
+                       Q 42,32 27,17
+                Z" fill="transparent" stroke="black" stroke-width="4" />
+              <!-- third drop -->
+              <path d="M 65 10
+                       Q 48,27 65,32
+                       Q 82,27 65,10
+                Z" fill="transparent" stroke="black" stroke-width="4" />
+            </svg>
+          </div>
+          <div class="mr-8">
+            <p class="font-semibold text-sm" style="font-family: Arial, Helvetica, sans-serif;">Humidifier</p>
+            <span class="text-xs text-slate-500 font-medium" style="font-family: Arial, Helvetica, sans-serif;">1 unit |
+              2kWh</span> 
+          </div>
+        </div>
+        <button class="hover:translate-x-1 transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+        
+      </div>
+    </div>
+  </div>
+  <!-------------------------->
+</body>
+
+</html>
