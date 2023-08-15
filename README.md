@@ -1,7 +1,8 @@
 # Front-End-2023
-# Contributors
 
-This repository has received contributions from the following members:
+
+
+## Contributors
 
 - [empeo](https://github.com/empeo)
 - [rahma-mohamed](https://github.com/rahma-mohamed)
@@ -24,6 +25,17 @@ This repository has received contributions from the following members:
 - [Basant124](https://github.com/Basant124)
 - [DarkCode662432](https://github.com/DarkCode662432)
 
-# Repository Contributions
+## Description
 
-We appreciate the valuable contributions of each member to this repository. Thank you for your efforts and dedication! It's great to see that each member has their own branch with their name, where we can see their individual work on tasks that require individual effort. We appreciate the contributions of each member and thank you for being a part of this repository!
+Welcome to the Front-End-2023 repository! This repository hosts the frontend codebase for the Front-End-2023 project. It is a collaborative effort to build an engaging and user-friendly frontend application using modern web technologies.
+
+
+
+# Explain how to Push to the repo ?
+- every member has his own branch with his name on it. [WATCH the video](https://youtu.be/2_Kn2Tb-QWs
+)
+
+
+## Contact
+
+If you have any questions or inquiries, you can reach out to us at [dragons@divzoon.com](mailto:dragons@divzoon.com).
