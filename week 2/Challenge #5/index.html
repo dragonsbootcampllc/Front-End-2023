@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge #5</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- font icon -->
+  <link rel="stylesheet" href="style.css">
+  <!-- tailwindCss scripts -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'main-bg-color': '#1e232c',
+            'main-gradient-color-start': '#009bf6',
+            'main-gradient-color-end': '#0084ff',
+            'second-color': '#0070d7',
+            'thierd-color': '#0061ba',
+            'my-green': '#00ae6f',
+            'body-bg': '#65727e',
+            'button-bg': '#131821'
+          },
+          fontFamily: {
+            'main-font': ['M PLUS Rounded 1c', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-body-bg overflow-x-hidden flex justify-center items-center font-main-font">
+  <div class="background fixed w-full top-0 -z-50">
+    <!-- left circles -->
+    <span class="rounded-full bg-white w-2 h-2 inline-block absolute top-[12rem] left-[4em]"></span>
+    <span class="rounded-full bg-red-500 w-[10px] h-[10px] inline-block absolute top-[26rem] translate-x-[-50%]"></span>
+    <span
+      class="rounded-full w-[10px] h-[10px] inline-block absolute top-[21rem] left-[8rem] bg-main-gradient-color-start"></span>
+    <!-- right circles -->
+    <span class="rounded-full bg-my-green w-3 h-3 inline-block absolute top-[11rem] right-[6em]"></span>
+    <span class="rounded-full bg-[#b0b7be] w-[10px] h-[10px] inline-block absolute top-[24rem] right-[7em]"></span>
+    <span
+      class="rounded-full bg-[#feb601] w-[10px] h-[10px] inline-block absolute top-[20rem] translate-x-[50%] right-[0]"></span>
+  </div>
+  <div class="container max-w-[550px] flex-wrap flex justify-center items-end gap-6 font-main-font">
+    <!-- Component 1 -------------------------------------------------------------------------------------------->
+    <div
+      class="component1 bg-main-bg-color w-[250px]  rounded-[20px] flex flex-col items-center text-[#efefef] pt-10 pb-11">
+      <div class="img w-[100px] aspect-square rounded-full m-auto"><img src="/Character.PNG" class="w-full" loading="lazy"/></div>
+      <div class="details text-center mt-4">
+        <h4 class="font-semibold">Dana Larson</h4>
+        <p class="text-[10px] font-thin text-gray-400">Visual Designer</p>
+      </div>
+      <div class="icons flex gap-x-2 mt-5">
+        <div class="icon bg-button-bg w-9 aspect-square rounded-full flex justify-center items-center cursor-pointer hover:opacity-[.85] transition-all"><span class="icon-local_mall text-gray-400"></span></div>
+        <div class="icon bg-button-bg w-9 aspect-square rounded-full flex justify-center items-center cursor-pointer hover:opacity-[.85] transition-all"><span class="icon-link text-gray-400"></span></div>
+        <div class="icon bg-button-bg w-9 aspect-square rounded-full flex justify-center items-center cursor-pointer hover:opacity-[.85] transition-all"><span class="icon-message-circle text-gray-400"></span></div>
+        <div class="icon bg-button-bg w-9 aspect-square rounded-full flex justify-center items-center cursor-pointer hover:opacity-[.85] transition-all"><span class="icon-upload text-gray-400"></span></div>
+      </div>
+    </div>
+
+    <!-- Component 2 -------------------------------------------------------------------------------------------->
+    <div class="component2 bg-main-bg-color w-[250px] rounded-[20px] flex items-center justify-center py-[50px]">
+      <img src="six shape.png" class="w-[160px] img" loading="lazy">
+    </div>
+
+    <!-- Component 3 -------------------------------------------------------------------------------------------->
+    <div class="component3 bg-main-bg-color w-[250px] rounded-[20px]">
+      <div class="header flex justify-between items-center px-5 py-4 text-[#888]">
+        <p class="text-xs font-semibold">Insights</p>
+        <div class="dots w-3 h-2 flex justify-between items-center">
+          <span class="rounded-full bg-gray-400 w-[2px] inline-block aspect-square "></span>
+          <span class="rounded-full bg-gray-400 w-[2px] inline-block aspect-square "></span>
+          <span class="rounded-full bg-gray-400 w-[2px] inline-block aspect-square "></span>
+        </div>
+      </div>
+      <div class="border-gray-800 border-t-[1px]"></div>
+      <div class="nums  overflow-x-hidden flex no-wrap mt-8">
+        <div class="details px-5">
+          <h2 class="text-[2.6em] font-semibold text-white">270.5k</h2>
+          <p class="text-[10px] w-28 text-[#888]">Account reached in the last 30 days</p>
+        </div>
+        <div class="details px-5">
+          <h2 class="text-[2.6em] font-semibold text-[#888]">896.2k</h2>
+          <p class="text-[10px] w-28 text-[#888]">Account reached in the last 30 days</p>
+        </div>
+      </div>
+      <div class="scaler relative px-[3.25rem] mt-9">
+        <div class="bars h-[100px] mt-5 relative flex items-end gap-x-3 w-[180px]">
+          <div class="bar flex flex-col w-8 h-[35%] overflow-hidden rounded-[4px]">
+            <div class="b bg-[#a799ff] w-full h-[50%]"></div>
+            <div class="t bg-[#7966ec] grow"></div>
+          </div>
+          <div class="bar flex flex-col w-8 h-[58%] overflow-hidden rounded-[4px]">
+            <div class="b bg-[#a799ff] w-full h-[54%]"></div>
+            <div class="t bg-[#7966ec] grow"></div>
+          </div>
+          <div class="bar flex flex-col w-8 h-[50%] overflow-hidden rounded-[4px]">
+            <div class="b bg-[#a799ff] w-full h-[55%]"></div>
+            <div class="t bg-[#7966ec] grow"></div>
+          </div>
+          <div class="bar flex flex-col w-8 h-[80%] overflow-hidden rounded-[4px]">
+            <div class="b bg-[#a799ff] w-full h-[32%]"></div>
+            <div class="t bg-[#7966ec] grow"></div>
+          </div>
+          <div class="bar flex flex-col w-8 h-[70%] overflow-hidden rounded-[4px]">
+            <div class="b bg-[#a799ff] w-full h-[30%]"></div>
+            <div class="t bg-[#7966ec] grow"></div>
+          </div>
+          <div class="bar flex flex-col w-8 h-[100%] overflow-hidden rounded-[4px]">
+            <div class="b bg-[#a799ff] w-full h-[70%]"></div>
+            <div class="t bg-[#7966ec] grow"></div>
+          </div>
+          <div class="scales flex flex-col h-full absolute -ml-8 mb-5 top-[0] left-[0]">
+            <span class="text-[8px] text-[#888] absolute top-[0]">6k</span>
+            <span class="text-[8px] text-[#888] absolute top-[50%] -translate-y-[50%]">3k</span>
+            <span class="text-[8px] text-[#888] absolute top-[100%] -translate-y-[100%]">0</span>
+          </div>
+        </div>
+      </div>
+      <p class="text-[8px] text-[#888] my-4 mt-5 ml-12">Last six months</p>
+    </div>
+
+    <!-- Component 4 -------------------------------------------------------------------------------------------->
+    <div
+      class="component4 bg-[#0092ff] w-[250px] rounded-[15px] self-start relative shadow-sm
+      after:w-full after:h-[100px] after:rounded-[15px] after:scale-[.89] after:-z-[1] after:shadow-sm after:bg-[#0070d7] after:content-[''] after:inline-block  after:absolute after:-bottom-[20px]
+      before:w-full before:h-[100px] before:rounded-[15px] before:scale-[.79] before:-z-[2] before:shadow-sm before:bg-[#0061ba] before:content-[''] before:inline-block before:absolute before:-bottom-[40px] ">
+      <div class="layout w-full h-full bg-gradient-to-b from-transparent to-[#000]"></div>
+      <div class="p-8">
+        <p class="text-white font-semibold text-[2rem] leading-[2.5rem] mb-5">Design
+          <span
+            class="toggle bg-white inline-block cursor-pointer w-[3.25rem] h-6 flex items-center justify-end py-[15px] px-1 float-right rounded-[20px]">
+            <span class="circle inline-block bg-my-green w-6 aspect-square rounded-full"></span>
+          </span>
+          <span class="text-[3.5rem]">Faster.</span> Make things <span class="text-[3.5rem]">Better.</span>
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="bg-button-bg w-full inline-block mx-auto py-[.4rem] rounded-lg text-xs text-white cursor-pointer hover:opacity-[.9] transition-all">Purchase
+            now <span class="icon inline w-fit ml-2">
+              <svg viewBox="0 0 100 100" class="inline w-[10px]">
+              <path d="
+                M 50 0
+                L 50 100
+                M 0 50
+                L 100 50
+                Z" stroke="white" fill="transparent" stroke-width="5"/>
+            </svg>
+          </span></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
