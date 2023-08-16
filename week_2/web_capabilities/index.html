@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Task 3 - Web Crypto API</title>
+    </head>
+    <body>
+        <div
+            class="min-h-screen bg-gray-200 flex justify-start items-start flex-col gap-20 p-8 m-auto"
+            style="min-width: 240px"
+        >
+            <!-- ! Buttons  -->
+            <div class="flex flex-col gap-3">
+                <div class="icons flex gap-6">
+                    <button class="relative videocam-btn">
+                        <div class="icon-big">
+                            <div class="videocam-icon-on w-16 h-16 hidden">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 -960 960 960"
+                                    class="fill-green-500"
+                                >
+                                    <path
+                                        d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h520q24 0 42 18t18 42v215l160-160v410L720-435v215q0 24-18 42t-42 18H140Zm0-60h520v-520H140v520Zm0 0v-520 520Z"
+                                    />
+                                </svg>
+                            </div>
+
+                            <div class="videocam-icon-off w-16 h-16">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 -960 960 960"
+                                    class="fill-red-500"
+                                >
+                                    <path
+                                        d="M880-275 720-435v111l-60-60v-356H304l-60-60h416q24 0 42 18t18 42v215l160-160v410ZM848-27 39-836l42-42L890-69l-42 42ZM484-560Zm-87 82ZM159-800l60 60h-79v520h520v-79l60 60v19q0 24-18 42t-42 18H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h19Z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="icon-small absolute -bottom-0.5 -right-0.5 z-20"
+                        >
+                            <div
+                                class="icon-done bg-green-600 w-6 h-6 rounded-full border-2 border-gray-300 hidden"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 -960 960 960"
+                                    fill="#fff"
+                                >
+                                    <path
+                                        d="M378-246 154-470l43-43 181 181 384-384 43 43-427 427Z"
+                                    />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="icon-close bg-red-600 w-6 h-6 rounded-full border-2 border-gray-300"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="#fff"
+                                    viewBox="0 -960 960 960"
+                                >
+                                    <path
+                                        d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="relative location-btn">
+                        <div class="icon-big">
+                            <div class="location-icon-on w-16 h-16 hidden">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 -960 960 960"
+                                    class="fill-green-500"
+                                >
+                                    <path
+                                        d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+                                    />
+                                </svg>
+                            </div>
+
+                            <div class="location-icon-off w-16 h-16">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 -960 960 960"
+                                    class="fill-red-500"
+                                >
+                                    <path
+                                        d="M550-560q0-28.875-20.562-49.438Q508.875-630 480-630q-14 0-25.5 5T434-612l98 98q8-9 13-20.5t5-25.5Zm167 231-44-44q34-51 50.5-96t16.5-83q0-117.79-75.292-192.895Q589.417-820 480-820q-54 0-100.5 18.5T298-748l-42-42q45-44 103.229-67T480-880q127 0 223.5 89T800-552q0 51-20.5 106.5T717-329Zm-120 52L233-641q-7 20-10 42.5t-3 46.5q0 75 65 173.5T480-159q34-31 63-60.5t54-57.5ZM833-41 640-234q-33 37-72.5 75.5T480-80Q319-217 239.5-334.5T160-552q0-37.689 6.5-71.844Q173-658 186-688L26-848l43-43L876-84l-43 43ZM415-459Zm71-101Z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="icon-small absolute -bottom-0.5 -right-0.5 z-20"
+                        >
+                            <div
+                                class="icon-done bg-green-600 w-6 h-6 rounded-full border-2 border-gray-300 hidden"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 -960 960 960"
+                                    fill="#fff"
+                                >
+                                    <path
+                                        d="M378-246 154-470l43-43 181 181 384-384 43 43-427 427Z"
+                                    />
+                                </svg>
+                            </div>
+
+                            <div
+                                class="icon-close bg-red-600 w-6 h-6 rounded-full border-2 border-gray-300"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="#fff"
+                                    viewBox="0 -960 960 960"
+                                >
+                                    <path
+                                        d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+                <p class="location-message font-bold text-sm"></p>
+                <p class="videocam-message font-bold text-sm"></p>
+            </div>
+
+            <!-- ! Location -->
+            <div class="location-output">
+                <h2 class="text-3xl font-bold mb-3">📌 Location:</h2>
+                <p class="location-output-message pl-14 text-red-700">
+                    🔴 Please allow to using Location
+                </p>
+                <div class="location-output-content pl-14 hidden">
+                    <p class="location-output-latitude">
+                        <span class="font-bold">Latitude: </span>
+                        <span class="location-output-latitude-value"></span>
+                        °
+                    </p>
+                    <p class="location-output-longitude py-2">
+                        <span class="font-bold">Longitude: </span>
+                        <span class="location-output-longitude-value"></span>
+                        °
+                    </p>
+                    <a
+                        class="location-link text-blue-700 hover:text-blue-500 hover:underline transition-all duration-200"
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >🌎 Location on Google Maps</a
+                    >
+                    <p class="location-last-update mt-2 text-sm">
+                        <span class="font-bold">Last update: </span>
+                        <span class="location-last-update-value"></span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- ! Video -->
+            <div class="video-output">
+                <h2 class="text-3xl font-bold mb-3">📌 Video:</h2>
+                <p class="video-output-message pl-14 text-red-700">
+                    🔴 Please allow to using Video
+                </p>
+                <div class="video-output-content pl-14 hidden">
+                    <video
+                        class="video-output-content-video"
+                        controls
+                        autoplay
+                    ></video>
+                    <button
+                        class="video-control ml-3 mt-3 bg-blue-500 px-4 py-2 text-white text-lg font-bold rounded-xl"
+                    ></button>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
