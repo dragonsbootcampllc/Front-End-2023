@@ -1,0 +1,23 @@
+Getting the current position
+To obtain the user's current location, you can call the getCurrentPosition() method.
+ This initiates an asynchronous request to detect the user's position, and queries the positioning hardware to get up-to-date information.
+  When the position is determined, the defined callback function is executed.
+   You can optionally provide a second callback function to be executed if an error occurs.
+    A third, optional, parameter is an options object where you can set the maximum age of the position returned,
+     the time to wait for a request, and if you want high accuracy for the position.
+
+     Watching the current position
+If the position data changes (either by device movement or if more accurate geo information arrives), 
+you can set up a callback function that is called with that updated position information. 
+This is done using the watchPosition() function, which has the same input parameters as getCurrentPosition(). 
+The callback function is called multiple times, allowing the browser to either update your location as you move, or provide a more accurate location as different techniques are used to geolocate you.
+ The error callback function, which is optional just as it is for getCurrentPosition(), can be called repeatedly.
+
+ Fine tuning the response
+Both getCurrentPosition() and watchPosition() accept a success callback, an optional error callback, and an optional options object.
+
+This object allows you to specify whether to enable high accuracy, 
+a maximum age for the returned position value (up until this age it will be cached and reused if the same position is requested again; 
+after this the browser will request fresh position data),
+ and a timeout value that dictates how long the browser should attempt to get the position data for,
+ before it times out
