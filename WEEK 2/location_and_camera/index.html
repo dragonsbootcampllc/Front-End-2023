@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Location and Media Access</title>
+    <style>
+        .icon-on {
+            color: green;
+        }
+
+        .icon-off {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Location and Media Access</h1>
+    <button onclick="getLocation()">Get Location</button>
+    <br>
+    <br>
+    <video id="videoElement" autoplay></video>
+    <br>
+    <br>
+    <i id="cameraIcon" onclick="toggleCamera()" class="fas fa-video icon-off"></i>
+    <br>
+    <br>
+    <br>
+    <audio id="audioElement" controls></audio>
+    <br>
+    <br>
+    <i id="microphoneIcon" onclick="toggleMicrophone()" class="fas fa-microphone icon-off"></i>
+    <br>
+
+    <script src="app.js"></script>
+</body>
+</html>
