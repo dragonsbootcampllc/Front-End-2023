@@ -1,0 +1,20 @@
+Geolocation API
+
+The Geolocation API is a powerful feature provided by modern web browsers that allows developers 
+to retrieve the geographical location information of a user's device. It enables web applications to access the latitude and longitude coordinates, 
+as well as other related data such as altitude, speed, and heading.
+
+How it Works
+
+The Geolocation API utilizes various methods to determine the user's location. 
+It typically relies on a combination of GPS (Global Positioning System), 
+Wi-Fi network information, cellular network information, 
+and IP address to provide accurate location data.
+
+When a web application requests the user's location, 
+the browser prompts the user for permission to share their location information. Once the user grants permission, 
+the browser uses the available sources to estimate the device's location.
+
+main method:
+The getCurrentPosition() method also accepts optional parameters to configure the desired level of accuracy
+
