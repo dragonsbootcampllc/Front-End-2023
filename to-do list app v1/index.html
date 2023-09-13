@@ -1,0 +1,72 @@
+
+<!DOCTYPE html> <!-- Declares the document type as HTML5 -->
+<html lang="en"> <!-- Specifies the document's language as English -->
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Import Tailwind CSS files -->
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Loads the Tailwind CSS library from a CDN -->
+  
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = { // Configures Tailwind CSS settings 
+      theme: {
+        extend: {
+          screens: {
+            Csm: "380px" // Custom screen size configurations can be added here
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Import Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>to-do List</title> <!-- Sets the title of the web page -->
+</head>
+
+<body>
+  <!-- This is the root of our tree, everything will be added here in this div -->
+  <div id="root" class="min-h-screen w-screen overflow-hidden flex justify-center items-center bg-purple-900">
+    <!-- This is the to-do section -->
+    <div class="w-4/5 max-w-[400px] p-8 bg-purple-600 rounded-lg shadow-lg">
+      <!-- This is the title -->
+      <h1 class="text-[#fffbeb] mb-8 font-semibold text-[2.5rem] text-center max-Csm:text-[2rem]">to-do list</h1>
+      
+      <!-- This the task form -->
+      <div class="mb-4 flex flex-col items-end justify-center gap-2">
+        <!-- This is task input -->
+        <input type="text" placeholder="Task Name" id="taskInput"
+          class="w-full outline-none duration-[0.5s] bg-transparent p-2 border-b-2 border-b-[#fffbeb] max-Csm:text-[1rem]  placeholder:text-[#fffbeb] text-[1.2rem] caret-[#fffbeb] text-[#fffbeb]">
+          
+        <!-- This is add task button -->
+        <button id="addTaskBtn"
+          class="capitalize p-2 w-full mt-5 rounded-md  border-2 duration-[0.4s] border-transparent hover:border-purple-800/50 text-[#fffbeb] text-[1rem] ">add task</button>
+      </div>
+      
+      <!-- This is tasks container -->
+      <div class="flex flex-col gap-4" id="tasksContainer">
+        <!-- Example task -->
+        <div class="flex justify-between items-center flex-wrap bg-purple-800 rounded-lg p-4 max-Csm:p-2">
+          <!-- Task name -->
+          <p class="p-active text-[1rem] max-Csm:text-[.8rem] text-[#fffbeb] truncate max-w-[90%]">Tset</p>
+          
+          <!-- Delete button -->
+          <i class="fa-solid fa-trash text-red-500 cursor-pointer max-Csm:text-[.8rem] text-[1rem]" onclick="deleteTask(this)"></i>
+        </div>
+      </div>
+      
+      <!-- Clear tasks button -->
+      <button id="clearTasksBtn" 
+        class="capitalize p-2 w-full mt-5 rounded-md bg-purple-800 duration-[0.4s] hover:bg-transparent text-[#fffbeb] text-[1rem]">clear tasks</button>
+    </div>
+  </div>
+
+  <!-- This is the main JS file -->
+  <script type="module" src="./main.js"></script> <!-- Links to your main JavaScript file -->
+</body>
+
+</html>
